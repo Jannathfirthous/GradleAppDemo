@@ -3,6 +3,7 @@ package com.nv.atest.Service;
 import java.util.List;
 
 import com.nv.atest.Entity.Product;
+import com.nv.atest.Entity.ProductInfo;
 
 public interface ProductServiceInterface {
 	public List<Product> getAllProducts() throws Exception;
@@ -22,5 +23,7 @@ public interface ProductServiceInterface {
 			throws Exception;
 
 	public String insertProduct(Product p) throws Exception;
+
+	public Product linkProduct(ProductInfo productInfo, Product product);
 
 }
